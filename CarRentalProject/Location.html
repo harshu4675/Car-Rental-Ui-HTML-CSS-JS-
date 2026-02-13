@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LocationStyle.css">
+    <title>Location Selection</title>
+</head>
+<body>
+    <header>
+        <h1>Select Your Location</h1>
+    </header>
+    <main>
+        <p>Please choose a location for your car rental.</p>
+        <form id="locationForm">
+            <label for="city">Choose city:</label>
+            <select id="city" name="city">
+                <option value="Indore">Indore</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Chennai">Chennai</option>
+            </select>
+            <button type="button" onclick="searchCity()">Search</button>
+        </form>
+    </main>
+    <footer>
+        <p>@2025 Inspire Car Rental Service</p>
+    </footer>
+    <script>
+        function searchCity() {
+            const city = document.getElementById('city').value;
+            alert('Selected city: ' + city);
+        }
+    </script>
+</body>
+</html>

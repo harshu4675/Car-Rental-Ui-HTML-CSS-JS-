@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Inspire Car</title>
+    <link rel="stylesheet" href="Register.css" />
+  </head>
+  <body>
+    <div class="nav__logo">
+      <a href="#" class="logo">
+        <img src="assets/logo-dark.png" alt="logo" class="logo-dark" />
+      </a>
+    </div>
+    <div class="container">
+      <h2>Welcome</h2>
+
+      <div class="tabs">
+        <button class="tab active" onclick="switchTab('login')">Login</button>
+        <button class="tab" onclick="switchTab('signup')">Signup</button>
+      </div>
+
+      <!-- Login Form -->
+      <div id="login" class="form active">
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button class="btn">Login</button>
+      </div>
+
+      <!-- Signup Form -->
+      <div id="signup" class="form">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button class="btn">Create Account</button>
+      </div>
+
+      <div class="back-link">
+        <a href="index.html">← Back to Home</a>
+      </div>
+    </div>
+
+    <script>
+      function switchTab(tab) {
+        document
+          .querySelectorAll(".tab")
+          .forEach((btn) => btn.classList.remove("active"));
+        document
+          .querySelectorAll(".form")
+          .forEach((f) => f.classList.remove("active"));
+
+        event.target.classList.add("active");
+        document.getElementById(tab).classList.add("active");
+      }
+    </script>
+  </body>
+</html>

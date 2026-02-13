@@ -1,0 +1,14 @@
+body{
+    background:#e3e9f0;
+    color: #000000;
+    text-align: center;
+    border:black 2px solid;
+    border-radius: 10%;
+    box-shadow: 2px 2px 2px 2px #4b4d4f;
+    margin-left: 40%;
+    margin-right:40%;
+    margin-top: 3%;
+}
+button{
+    color: #000000;
+}
